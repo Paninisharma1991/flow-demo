@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 
+require ('newrelic');
 require('dotenv').config()
 
 app.set('port', (process.env.PORT || 5000));
